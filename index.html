@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <title>Tischtennis</title>
+  <meta name="theme-color" content="#000000">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Tischtennis">
+  <link rel="apple-touch-icon" href="icons/icon-180.png">
+  <link rel="icon" href="icons/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app"></div>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <div id="modal" role="dialog" aria-modal="true">
+    <div class="dialog">
+      <h2>Wirklich neu anfangen?</h2>
+      <p>Der aktuelle Spielstand geht verloren.</p>
+      <button class="yes" data-action="confirm-new">Ja, neues Spiel</button>
+      <button class="no" data-action="cancel-new">Nein, weiterspielen</button>
+    </div>
+  </div>
+  <script src="match.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
